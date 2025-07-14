@@ -1,0 +1,1 @@
+<view class="container data-v-1cf27b2a"><uni-list class="data-v-1cf27b2a" u-s="{{['d']}}" u-i="1cf27b2a-0" bind:__l="__l"><uni-list-item wx:for="{{a}}" wx:for-item="item" wx:key="a" class="data-v-1cf27b2a" u-i="{{item.b}}" bind:__l="__l" u-p="{{item.c}}"/></uni-list></view>
