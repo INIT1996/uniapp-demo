@@ -9,7 +9,8 @@
     "postcss": false,
     "minified": false,
     "newFeature": true,
-    "bigPackageSizeSupport": true
+    "bigPackageSizeSupport": true,
+    "minifyWXML": true
   },
   "compileType": "miniprogram",
   "libVersion": "",
