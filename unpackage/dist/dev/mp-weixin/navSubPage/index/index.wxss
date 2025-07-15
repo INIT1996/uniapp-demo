@@ -1,19 +1,19 @@
-.container.data-v-dfa652a6 {
+.container.data-v-4f462226 {
   height: 100vh;
 }
-.container .bar_box.data-v-dfa652a6 {
+.container .bar_box.data-v-4f462226 {
   background-color: #FFE233;
 }
-.container .bar_box .nav_bar.data-v-dfa652a6 {
+.container .bar_box .nav_bar.data-v-4f462226 {
   display: flex;
   align-items: center;
   box-sizing: border-box;
   justify-content: space-between;
 }
-.container .bar_box .nav_bar .nav_bar_left.data-v-dfa652a6 {
+.container .bar_box .nav_bar .nav_bar_left.data-v-4f462226 {
   font-weight: bold;
 }
-.container .bar_box .nav_bar .nav_bar_right.data-v-dfa652a6 {
+.container .bar_box .nav_bar .nav_bar_right.data-v-4f462226 {
   height: 100%;
   display: flex;
   padding: 0 1rem;
