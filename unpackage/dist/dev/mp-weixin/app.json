@@ -4,7 +4,7 @@
   ],
   "subPackages": [
     {
-      "root": "navSubPages",
+      "root": "navSubPage",
       "pages": [
         "index/index"
       ]

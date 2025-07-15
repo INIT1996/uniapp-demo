@@ -13,7 +13,7 @@
 	} from 'vue';
 	const list = ref([{
 		title: 'uniapp实现小程序之自定义导航栏',
-		path:'/navSubPages/index/index'
+		path:'/navSubPage/index/index'
 	}]);
 </script>
 

@@ -9,7 +9,7 @@
 	],
 	"subPackages": [
 		{
-			"root": "navSubPages",
+			"root": "navSubPage",
 			"pages": [
 				{
 					"path": "index/index",

@@ -15,7 +15,7 @@ const _sfc_main = {
   setup(__props) {
     const list = common_vendor.ref([{
       title: "uniapp实现小程序之自定义导航栏",
-      path: "/navSubPages/index/index"
+      path: "/navSubPage/index/index"
     }]);
     return (_ctx, _cache) => {
       return {
