@@ -1,24 +1,19 @@
 .container.data-v-4f462226 {
   height: 100vh;
+  box-sizing: border-box;
+}
+.container .bg.data-v-4f462226 {
+  width: 100%;
+  height: 45vh;
+  position: fixed;
 }
 .container .bar_box.data-v-4f462226 {
-  background-color: #FFE233;
+  z-index: 1;
+  position: relative;
 }
 .container .bar_box .nav_bar.data-v-4f462226 {
+  color: #fff;
   display: flex;
   align-items: center;
-  box-sizing: border-box;
-  justify-content: space-between;
-}
-.container .bar_box .nav_bar .nav_bar_left.data-v-4f462226 {
-  font-weight: bold;
-}
-.container .bar_box .nav_bar .nav_bar_right.data-v-4f462226 {
-  height: 100%;
-  display: flex;
-  padding: 0 1rem;
-  font-size: 0.9rem;
-  border-radius: 1rem;
-  align-items: center;
-  background-color: #FFF3AD;
+  justify-content: center;
 }

@@ -1,38 +1,25 @@
 "use strict";
 const common_vendor = require("../../common/vendor.js");
+const common_assets = require("../../common/assets.js");
 const _sfc_main = {
   __name: "index",
   setup(__props) {
-    const statusBarHeight = common_vendor.ref(0);
-    const navBarStyle = common_vendor.reactive({
-      width: 0,
-      //宽度
-      height: 0,
-      //高度
-      paddingTop: 0,
-      //上内边距
-      paddingBottom: 0,
-      //下内边距
-      paddingLeft: 0,
-      //左内边距
-      paddingRight: 0
-      //右内边距
-    });
+    let statusBarHeight = common_vendor.ref(0);
+    let navBarHeight = common_vendor.ref(0);
     common_vendor.onBeforeMount(() => {
       const systemInfo = common_vendor.index.getSystemInfoSync();
       statusBarHeight.value = systemInfo.statusBarHeight;
-      const customInfo = common_vendor.index.getMenuButtonBoundingClientRect();
-      navBarStyle.width = `${customInfo.left}px`;
-      navBarStyle.paddingTop = `${customInfo.top - statusBarHeight.value}px`;
-      navBarStyle.paddingBottom = `${customInfo.top - statusBarHeight.value}px`;
-      navBarStyle.paddingLeft = `${systemInfo.screenWidth - customInfo.right}px`;
-      navBarStyle.paddingRight = `${systemInfo.screenWidth - customInfo.right}px`;
-      navBarStyle.height = `${customInfo.height + (customInfo.top - statusBarHeight.value) * 2}px`;
+      const custom = common_vendor.wx$1.getMenuButtonBoundingClientRect();
+      navBarHeight.value = custom.height + (custom.top - statusBarHeight.value) * 2;
+      custom.left;
+      systemInfo.screenWidth - customInfo.right;
+      custom.top - statusBarHeight.value;
     });
     return (_ctx, _cache) => {
       return {
-        a: statusBarHeight.value + "px",
-        b: common_vendor.s(navBarStyle)
+        a: common_assets._imports_0,
+        b: common_vendor.unref(statusBarHeight) + "px",
+        c: common_vendor.unref(navBarHeight) + "px"
       };
     };
   }

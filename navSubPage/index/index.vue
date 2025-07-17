@@ -1,14 +1,10 @@
 <template>
 	<view class="container">
+		<image class="bg" src="../static/myBg.png" mode="aspectFill"></image>
 		<view class="bar_box">
 			<view class="status_bar" :style="{height:statusBarHeight+'px'}"></view>
-			<view class="nav_bar" :style="navBarStyle">
-				<view class="nav_bar_left">
-					XX街道
-				</view>
-				<view class="nav_bar_right">
-					订阅
-				</view>
+			<view class="nav_bar" :style="{ height:navBarHeight+'px' }">
+				自定义nav
 			</view>
 		</view>
 	</view>
@@ -17,65 +13,50 @@
 <script setup>
 	import {
 		ref,
-		onBeforeMount,
-		reactive
+		onBeforeMount
 	} from 'vue';
 	// 状态栏高度
-	const statusBarHeight = ref(0);
+	let statusBarHeight = ref(0);
 	// 导航栏样式
-	const navBarStyle = reactive({
-		width: 0, //宽度
-		height: 0, //高度
-		paddingTop: 0, //上内边距
-		paddingBottom: 0, //下内边距
-		paddingLeft: 0, //左内边距
-		paddingRight: 0 //右内边距
-	});
+	let navBarHeight = ref(0);
 	onBeforeMount(() => {
 		const systemInfo = uni.getSystemInfoSync();
+		// 状态栏的高度
 		statusBarHeight.value = systemInfo.statusBarHeight;
-		const customInfo = uni.getMenuButtonBoundingClientRect();
-		// 导航栏的宽度 = 胶囊最左侧距离手机屏幕最左侧的距离
-		navBarStyle.width = `${customInfo.left}px`;
-		// 导航栏的上下边距 = 胶囊最上侧距离手机顶部的高度 - 状态栏的高度
-		navBarStyle.paddingTop = `${customInfo.top - statusBarHeight.value}px`;
-		navBarStyle.paddingBottom = `${customInfo.top - statusBarHeight.value}px`;
-		// 导航栏的左右边距 = 手机宽度 - 胶囊最右侧距离手机屏幕最左侧的距离
-		navBarStyle.paddingLeft = `${systemInfo.screenWidth - customInfo.right}px`;
-		navBarStyle.paddingRight = `${systemInfo.screenWidth - customInfo.right}px`;
+		// 获取胶囊的定位
+		const custom = wx.getMenuButtonBoundingClientRect();
 		// 导航栏的高度 = 胶囊的高度 + （胶囊最上侧距离手机顶部的高度 - 状态栏的高度）* 2
-		navBarStyle.height = `${customInfo.height + (customInfo.top - statusBarHeight.value)*2}px`;
+		navBarHeight.value = custom.height + (custom.top - statusBarHeight.value) * 2;
+		
+		// ----------------------拓展与思考-------------------------
+		
+		// 导航栏的实际宽度（扒除胶囊的部分）= 胶囊最左侧距离手机屏幕最左侧的距离
+		let navBarWidth = custom.left;
+		// 导航栏的左右边距 = 手机宽度 - 胶囊最右侧距离手机屏幕最左侧的距离
+		let navPaddingLeft = systemInfo.screenWidth - customInfo.right;
+		// 导航栏的上下边距 = 胶囊最上侧距离手机顶部的高度 - 状态栏的高度
+		let navPaddingTop = custom.top - statusBarHeight.value;
 	});
 </script>
 
 <style lang="less" scoped>
 	.container {
 		height: 100vh;
-
+		box-sizing: border-box;
+		.bg {
+			width: 100%;
+			height: 45vh;
+			position: fixed;
+		}
 		.bar_box {
-			background-color: #FFE233;
-
-			.status_bar {}
+			z-index: 1;
+			position: relative;
 
 			.nav_bar {
+				color: #fff;
 				display: flex;
 				align-items: center;
-				box-sizing: border-box;
-				justify-content: space-between;
-
-				.nav_bar_left {
-					font-weight: bold;
-				}
-
-				.nav_bar_right {
-					height: 100%;
-					display: flex;
-					padding: 0 1rem;
-					font-size: 0.9rem;
-					border-radius: 1rem;
-					align-items: center;
-					background-color: #FFF3AD;
-				}
+				justify-content: center;
 			}
 		}
 	}
