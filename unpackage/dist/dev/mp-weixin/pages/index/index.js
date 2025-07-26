@@ -14,8 +14,17 @@ const _sfc_main = {
   __name: "index",
   setup(__props) {
     const list = common_vendor.ref([{
-      title: "uniapp实现小程序之自定义导航栏",
+      title: "uniapp之自定义小程序导航栏",
+      note: "uniapp之自定义小程序导航栏",
       path: "/navSubPage/index/index"
+    }, {
+      title: "uniapp之下拉刷新和上拉加载（1）",
+      note: "使用onPullDownRefresh和onReachBottom实现",
+      path: "/pagingSubPage/index/index"
+    }, {
+      title: "uniapp之下拉刷新和上拉加载（2）",
+      note: "使用scroll-view实现",
+      path: "/customPagingSubPage/index/index"
     }]);
     return (_ctx, _cache) => {
       return {
@@ -26,7 +35,7 @@ const _sfc_main = {
             c: common_vendor.p({
               ellipsis: "1",
               title: item.title,
-              note: item.title,
+              note: item.note,
               showArrow: true,
               to: item.path
             })

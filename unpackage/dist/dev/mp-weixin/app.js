@@ -4,6 +4,8 @@ const common_vendor = require("./common/vendor.js");
 if (!Math) {
   "./pages/index/index.js";
   "./navSubPage/index/index.js";
+  "./pagingSubPage/index/index.js";
+  "./customPagingSubPage/index/index.js";
 }
 const _sfc_main = {
   onLaunch: function() {

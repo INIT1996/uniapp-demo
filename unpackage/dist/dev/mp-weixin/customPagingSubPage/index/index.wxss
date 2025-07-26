@@ -1,0 +1,15 @@
+.container.data-v-939d250f {
+  height: 100vh;
+  box-sizing: border-box;
+}
+.container .imgBox.data-v-939d250f {
+  width: 100%;
+  height: 10vh;
+}
+.container .imgBox .img.data-v-939d250f {
+  width: 100%;
+  height: 100%;
+}
+.container .main.data-v-939d250f {
+  height: 90vh;
+}

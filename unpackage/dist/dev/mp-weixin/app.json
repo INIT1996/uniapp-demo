@@ -8,12 +8,24 @@
       "pages": [
         "index/index"
       ]
+    },
+    {
+      "root": "pagingSubPage",
+      "pages": [
+        "index/index"
+      ]
+    },
+    {
+      "root": "customPagingSubPage",
+      "pages": [
+        "index/index"
+      ]
     }
   ],
   "window": {
     "navigationBarTextStyle": "white",
     "navigationBarTitleText": "uni-app",
-    "navigationBarBackgroundColor": "#F8F8F8",
+    "navigationBarBackgroundColor": "#0090C4",
     "backgroundColor": "#F8F8F8"
   },
   "usingComponents": {}

@@ -12,7 +12,7 @@ const _sfc_main = {
       const custom = common_vendor.wx$1.getMenuButtonBoundingClientRect();
       navBarHeight.value = custom.height + (custom.top - statusBarHeight.value) * 2;
       custom.left;
-      systemInfo.screenWidth - customInfo.right;
+      systemInfo.screenWidth - custom.right;
       custom.top - statusBarHeight.value;
     });
     return (_ctx, _cache) => {

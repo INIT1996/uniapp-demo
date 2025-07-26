@@ -1,8 +1,8 @@
 <template>
 	<view class="container">
 		<uni-list>
-			<uni-list-item v-for="(item,index) in list" :key="index" ellipsis="1" :title="item.title"
-				:note="item.title" showArrow :to="item.path"/>
+			<uni-list-item v-for="(item,index) in list" :key="index" ellipsis="1" :title="item.title" :note="item.note"
+				showArrow :to="item.path" />
 		</uni-list>
 	</view>
 </template>
@@ -12,8 +12,17 @@
 		ref
 	} from 'vue';
 	const list = ref([{
-		title: 'uniapp实现小程序之自定义导航栏',
-		path:'/navSubPage/index/index'
+		title: 'uniapp之自定义小程序导航栏',
+		note: 'uniapp之自定义小程序导航栏',
+		path: '/navSubPage/index/index'
+	}, {
+		title: 'uniapp之下拉刷新和上拉加载（1）',
+		note: '使用onPullDownRefresh和onReachBottom实现',
+		path: '/pagingSubPage/index/index'
+	}, {
+		title: 'uniapp之下拉刷新和上拉加载（2）',
+		note: '使用scroll-view实现',
+		path: '/customPagingSubPage/index/index'
 	}]);
 </script>
 

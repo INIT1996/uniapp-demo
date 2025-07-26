@@ -13,7 +13,7 @@
   },
   "compileType": "miniprogram",
   "libVersion": "",
-  "appid": "touristappid",
+  "appid": "wx95a7f66101abb0bd",
   "projectname": "uniapp-demo",
   "condition": {
     "search": {
@@ -29,8 +29,15 @@
       "list": []
     },
     "miniprogram": {
-      "current": -1,
-      "list": []
+      "current": 0,
+      "list": [
+        {
+          "id": 0,
+          "name": "customPagingSubPage/index/index",
+          "pathName": "customPagingSubPage/index/index",
+          "query": ""
+        }
+      ]
     }
   }
 }

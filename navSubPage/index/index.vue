@@ -33,7 +33,7 @@
 		// 导航栏的实际宽度（扒除胶囊的部分）= 胶囊最左侧距离手机屏幕最左侧的距离
 		let navBarWidth = custom.left;
 		// 导航栏的左右边距 = 手机宽度 - 胶囊最右侧距离手机屏幕最左侧的距离
-		let navPaddingLeft = systemInfo.screenWidth - customInfo.right;
+		let navPaddingLeft = systemInfo.screenWidth - custom.right;
 		// 导航栏的上下边距 = 胶囊最上侧距离手机顶部的高度 - 状态栏的高度
 		let navPaddingTop = custom.top - statusBarHeight.value;
 	});
