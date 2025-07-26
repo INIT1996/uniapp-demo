@@ -5,7 +5,7 @@ if (!Math) {
   "./pages/index/index.js";
   "./navSubPage/index/index.js";
   "./pagingSubPage/index/index.js";
-  "./customPagingSubPage/index/index.js";
+  "./pagingSubPage2/index/index.js";
 }
 const _sfc_main = {
   onLaunch: function() {

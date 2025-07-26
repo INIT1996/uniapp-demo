@@ -16,13 +16,13 @@
 		note: 'uniapp之自定义小程序导航栏',
 		path: '/navSubPage/index/index'
 	}, {
-		title: 'uniapp之下拉刷新和上拉加载（1）',
+		title: 'uniapp之下拉刷新和上拉加载（方式一）',
 		note: '使用onPullDownRefresh和onReachBottom实现',
 		path: '/pagingSubPage/index/index'
 	}, {
-		title: 'uniapp之下拉刷新和上拉加载（2）',
+		title: 'uniapp之下拉刷新和上拉加载（方式二）',
 		note: '使用scroll-view实现',
-		path: '/customPagingSubPage/index/index'
+		path: '/pagingSubPage2/index/index'
 	}]);
 </script>
 

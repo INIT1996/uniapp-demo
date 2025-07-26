@@ -1,7 +1,7 @@
 <template>
 	<view class="container">
 		<view class="imgBox">
-			<image class="img" src="/customPagingSubPage/static/myBg.png" mode="aspectFill"></image>
+			<image class="img" src="../static/myBg.png" mode="aspectFill"></image>
 		</view>
 		<scroll-view class="main" scroll-y="true" enable-flex="true" refresher-enabled="true" refresher-background="#f5f5f5"
 			:refresher-threshold="80" :refresher-triggered="triggered" @refresherrefresh="onRefresh"

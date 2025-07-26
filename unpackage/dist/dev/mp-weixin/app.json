@@ -16,7 +16,7 @@
       ]
     },
     {
-      "root": "customPagingSubPage",
+      "root": "pagingSubPage2",
       "pages": [
         "index/index"
       ]

@@ -33,9 +33,7 @@
       "list": [
         {
           "id": 0,
-          "name": "customPagingSubPage/index/index",
-          "pathName": "customPagingSubPage/index/index",
-          "query": ""
+          "pathName": "pagingSubPage/index/index"
         }
       ]
     }

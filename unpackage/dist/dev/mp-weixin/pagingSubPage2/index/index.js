@@ -74,7 +74,7 @@ const _sfc_main = {
         b: common_vendor.f(list.value, (item, index, i0) => {
           return {
             a: index,
-            b: "939d250f-1-" + i0 + ",939d250f-0",
+            b: "994626de-1-" + i0 + ",994626de-0",
             c: common_vendor.p({
               title: item.title,
               note: item.title
@@ -91,6 +91,6 @@ const _sfc_main = {
     };
   }
 };
-const MiniProgramPage = /* @__PURE__ */ common_vendor._export_sfc(_sfc_main, [["__scopeId", "data-v-939d250f"]]);
+const MiniProgramPage = /* @__PURE__ */ common_vendor._export_sfc(_sfc_main, [["__scopeId", "data-v-994626de"]]);
 wx.createPage(MiniProgramPage);
-//# sourceMappingURL=../../../.sourcemap/mp-weixin/customPagingSubPage/index/index.js.map
+//# sourceMappingURL=../../../.sourcemap/mp-weixin/pagingSubPage2/index/index.js.map
